@@ -1,0 +1,15 @@
+appId: com.thuannp.expodemoapp
+---
+- launchApp
+- assertVisible: 'Expo Demo App'
+- tapOn: 'Get message'
+- assertVisible: 'hello world.*'
+- assertNotVisible: '.*Batman chapter.*'
+- tapOn: 'Get book 1'
+- assertVisible: '.*Batman chapter 1'
+- tapOn: 'Get book 2'
+- assertVisible: '.*Batman chapter 2'
+- tapOn: 'Get book 3'
+- assertVisible: '.*Batman chapter 3'
+- tapOn: 'Clear book'
+- assertNotVisible: '.*Batman chapter.*'
