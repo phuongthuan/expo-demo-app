@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button, Text, View } from "react-native";
+import { Button, Text, View, StyleSheet, Platform } from "react-native";
+import Map from "@/components/Map";
 
 const useApi = async (endpoint: string) => {
   const response = await fetch(endpoint);
@@ -26,8 +27,6 @@ export default function Index() {
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
       }}
     >
       <Text>Expo Demo App</Text>
@@ -42,6 +41,8 @@ export default function Index() {
       <Button onPress={() => handleGetBook(2)} title="Get book 2" />
       <Button onPress={() => handleGetBook(3)} title="Get book 3" />
       <Button onPress={() => setBook("")} title="Clear book" />
+
+      <Map />
     </View>
   );
 }

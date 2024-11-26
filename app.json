@@ -10,14 +10,22 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.thuannp.expodemoapp"
+      "bundleIdentifier": "com.thuannp.expodemoapp",
+      "config": {
+        "googleMapsApiKey": "AIzaSyCGgHnzO0GreDTHLT-Of72aPk8KCqmozFA"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.thuannp.expodemoapp"
+      "package": "com.thuannp.expodemoapp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCGgHnzO0GreDTHLT-Of72aPk8KCqmozFA"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
